@@ -22,7 +22,7 @@ public class BoardController {
 		return "board";
 	}
 	
-	
+	//he
 	// 파라미터로 들어오는 값 잡기
 	@GetMapping("/detail")// model은 jsp에 값을 붙이기 위해서 넣었습니다.
 	public String detail(HttpServletRequest request, Model model) {

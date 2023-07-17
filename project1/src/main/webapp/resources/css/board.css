@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'OTWelcomeRA';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2')
+		format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+tr:hover {
+	background-color: #BACEE0;
+	text-decoration: underline;
+	text-decoration: 
+}
+
+body {
+	font-family: 'OTWelcomeRA';
+	background-color: #BACEE0;
+}
+
+.molu {
+	display: block;
+	margin-left: auto; 
+	margin-right : auto;
+}
+
+a {
+	display: block;
+	margin-left: auto; 
+	margin-right : auto;
+}
+
+
+
+table {
+	margin: 0 auto;
+	width: 800px;
+	height: 500px;
+}
+
+th {
+	background-color: #FFEB33;
+}
+
+td {
+	text-align: center;
+	background-color: #FFFFFF;
+}

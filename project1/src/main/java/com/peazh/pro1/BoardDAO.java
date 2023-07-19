@@ -24,6 +24,14 @@ public class BoardDAO {
 	}
 
 	public BoardDTO detail(String bno) {
-		return sqlSession.selectOne("board.detail", bno);
+		return sqlSession.selectOne("board.detail", bno);// 네임스페이스.id, 값
+	}
+
+	public void write(BoardDTO dto) {
+		sqlSession.insert("board.write", dto);// 네임스페이스.id, 값
+	}
+
+	public void delete(BoardDTO dto) {
+		sqlSession.delete("board.delete", dto);
 	}
 }

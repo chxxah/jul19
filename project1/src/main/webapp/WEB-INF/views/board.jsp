@@ -7,12 +7,40 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="./css/board.css">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-	<h1>보드</h1>
-	<a href="./index">index로 가기</a>
+<!-- menu -->
+	<nav>
+		<div class="header">
+			<div class="chxx">
+				<img alt="" src="./img/chxx.png"> <a href='./index'>CHXX
+					AH</a>
+			</div>
+			<div class="list">
+				<ul>
+					<li onclick="link('board')"><span style="color: #EC87C0">BOARD</span></li>
+					<li onclick="link('ourstory')">OUR STORY</li>
+					<li onclick="link('notice')">NOTICE</li>
+					<li onclick="link('contact')">CONTACT</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+<!-- board -->
+	<div class = bg_board>
+		<div class="head">BOARD</div>
+	</div>
 	<br>
-	<img class="molu" alt="" src="./img/image.png">
+	<hr>
+	<br>
+	<div class = btn>
+		<input>
+		<img alt="" src="./img/search.png" style="width:10%;">&nbsp&nbsp&nbsp
+		<img alt="" src="./img/write.png" style="width: 10%;" onclick="location.href='./write'">
+	</div>
 	<table>
 		<tr>
 			<th>번호</th>
@@ -31,5 +59,11 @@
 			</tr>
 		</c:forEach>
 	</table>
+	<button onclick="location.href='./write'">글쓰기</button>
+	<script>
+		function link(url) {
+			location.href = "./" + url;
+		}
+	</script>
 </body>
 </html>
